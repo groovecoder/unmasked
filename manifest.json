@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Unmasked",
+  "version": "1.0",
+
+  "description": "Unmasked shows 3rd-party trackers that saw activity in Incognito windows.",
+  "homepage_url": "https://github.com/groovecoder/unmasked",
+
+  "icons": {
+    "48": "images/unmasked.png",
+    "96": "images/unmasked.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "<all_urls>",
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": "images/unmasked.png",
+    "default_title": "Unmasked"
+  },
+
+  "background": {
+    "scripts": [
+      "js/browser-polyfill.js",
+      "js/capture.js",
+      "js/background.js"
+    ]
+  }
+}
